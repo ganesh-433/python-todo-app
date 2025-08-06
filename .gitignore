@@ -1,0 +1,19 @@
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Editor/OS specific files
+.DS_Store
+.vscode/
+
+# Docker
+*.log
+*.tmp
+
+# Environment variables
+.env
