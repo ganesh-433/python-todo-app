@@ -1,4 +1,4 @@
-## Simple Python To-Do Application 🐍
+## Simple Python To-Do Application 
 
 This is a full-stack to-do list application built with **FastAPI** as the backend, served by **Uvicorn**, and a simple **HTML/JavaScript** frontend. The entire application is containerized with **Docker** and deployed to **Google Cloud Platform (GCP)** using **Terraform** and an automated CI/CD pipeline with **Harness**.
 
