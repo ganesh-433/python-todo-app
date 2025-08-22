@@ -36,7 +36,7 @@ Before you can deploy this application, you need the following:
 
 -----
 
-### Deployment Steps (Automated via Harness) 🚀
+### Deployment Steps (Automated via Harness) 
 
 The entire deployment process is automated through a **Harness CI/CD pipeline**, which consists of two main stages.
 
