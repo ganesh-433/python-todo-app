@@ -1,19 +1,12 @@
-# Builder stage
-FROM python:3.10-slim AS builder
+FROM python:3.10-slim
 
 WORKDIR /app
-COPY requirements.txt .
-RUN pip install --upgrade pip
-RUN pip install --prefix=/install -r requirements.txt
 
-COPY app /app/app
+# Copy all files from your repo to the container
+COPY . /app
 
-# Final stage
-FROM python:3.10-slim AS runtime
-
-WORKDIR /app
-COPY --from=builder /install /usr/local
-COPY --from=builder /app /app
+# Install dependencies from requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8000
 
